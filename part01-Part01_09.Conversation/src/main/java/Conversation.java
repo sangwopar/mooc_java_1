@@ -11,6 +11,6 @@ public class Conversation {
         String message2 = scanner.nextLine();
         System.out.println("Thanks for sharing!");
         // Write your program here
-
+        
     }
 }
