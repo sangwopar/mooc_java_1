@@ -7,5 +7,8 @@ public class SpeedingTicket {
         Scanner scanner = new Scanner(System.in);
 
         // Write your program here. 
+        System.out.println("Give speed:");
+        int speed = Integer.valueOf(scanner.nextLine());
+        
     }
 }
