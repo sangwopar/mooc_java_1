@@ -9,6 +9,10 @@ public class SpeedingTicket {
         // Write your program here. 
         System.out.println("Give speed:");
         int speed = Integer.valueOf(scanner.nextLine());
+        System.out.println(speed);
+        if(speed > 120){
+            System.out.println("Speeding ticket!");
+        }
         
     }
 }
