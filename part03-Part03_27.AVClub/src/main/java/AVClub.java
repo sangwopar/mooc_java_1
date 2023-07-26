@@ -5,7 +5,18 @@ public class AVClub {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        while (true) {
+            String input = scanner.nextLine();
+            if (input.equals("")) {
+                break;
+            }
+            String[] piecs = input.split(" ");
+            for (String piec : piecs) {
+                if (piec.contains("av")) {
+                    System.out.println(piec);
+                }
+            }
+        }
 
     }
 }

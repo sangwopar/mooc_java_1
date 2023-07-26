@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class AverageOfAList {
@@ -11,6 +12,19 @@ public class AverageOfAList {
         // adding them on a list until user gives -1.
         // Then it computes the average of the numbers on the list
         // and prints it.
+        List<Integer> list = new ArrayList<>();
+        while(true) {
+            int input = Integer.valueOf(scanner.nextLine());
+            if (input == -1) {
+                break;
+            }
+            list.add(input);
+        }
+        int sum = 0;
+        for (int num : list) {
+            sum += num;
+        }
+        System.out.println("Average: " + sum / (double) list.size());
         
     }
 }
